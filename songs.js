@@ -381,6 +381,18 @@ const songs = [
   src:"songs/Heart_Attack(128k).m4a"
   }
 ]
+//loading songs
+var imgs=[]
+var imgUrls=[]
+songs.forEach(img=>{
+  imgUrls.push(img.image_src)
+  imgs.push(new Image())
+})
+for(i=0;i<imgUrls.length;i++){
+  imgs[i].src=imgUrls[i]
+}
+
+
 var currentSong=-1
 var length=songs.length//11
 var i=0
