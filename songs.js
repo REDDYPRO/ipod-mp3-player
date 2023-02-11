@@ -382,6 +382,7 @@ const songs = [
   }
 ]
 //loading songs
+window.addEventListener('load'()=>{
 var imgs=[]
 var imgUrls=[]
 songs.forEach(img=>{
@@ -391,7 +392,7 @@ songs.forEach(img=>{
 for(i=0;i<imgUrls.length;i++){
   imgs[i].src=imgUrls[i]
 }
-
+})
 
 var currentSong=-1
 var length=songs.length//11
